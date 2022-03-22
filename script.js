@@ -26,7 +26,6 @@ const monthsArray = [
   "December",
 ];
 
-// Array for 
 const daysArray = [
   "Sunday",
   "Monday",
@@ -58,7 +57,6 @@ const calculateAge = ()=>{
     showOutput(birthDate, atDate)
 }
 
-
 calculateAgeBtn.addEventListener("click",()=>calculateAge())
 
 
@@ -70,8 +68,6 @@ const startAnim = ()=>{
     inputDiv.classList.add("inputAnimation");
     outputDiv.classList.add("outputAnimation");
 }
-
-
 const showOutput = (birthdate, atdate) =>{
 
     atSomeDate = inputDate2.value + " " + monthsArray[selectAtMonth.value - 1] + " " + atYear.value + " (" + daysArray[atdate.getDay()] + ")"
@@ -92,7 +88,6 @@ const showOutput = (birthdate, atdate) =>{
     // RemainingDays_Year = 
     console.log(RemainingDays_Year)
     
-
     if(selectAtMonth.value > selectBirthMonth.value){
       RemainingMonths = Math.abs(selectAtMonth.value - selectBirthMonth.value); 
     }
@@ -120,7 +115,6 @@ const showOutput = (birthdate, atdate) =>{
     let totalHours = Math.floor(timeDiffInSeconds/(60*60))
 
     let totalDays = Math.floor(totalHours/24)
-
     
     outputContent.innerHTML = "";
 
